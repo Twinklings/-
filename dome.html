@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/zzsc.js"></script>
+    <script>
+        $(function(){
+                var stepW = 24;
+                $(".abp").css("width",0);
+                var ejx=$(".star").find("a");
+                ejx.click(function(){
+                    var ox=$(this).index()+1;
+//                    var xa=$(this).parent().find($(".star").find("a:lt("+ox+")"));
+                    $(this).parent().find(".abp").css({"width":stepW*ox});
+                })
+
+        })
+    </script>
+    <style>
+        *{paddinf:0;margin:0;}
+        .star{height:20px;width:120px;position:relative;cursor:pointer}
+        .star a{display:block;width:24px;height:20px;float:left;overflow:hidden;text-indent:-9999px;z-index:5;
+            background:url(images/123.png) 0 0 repeat-x;}
+        .abp{background:url(images/123.png) 0 -25px repeat-x;position:absolute;height:20px;width:120px;z-index:1;top:0;left:0}
+    </style>
+</head>
+<body>
+<div class="star">
+    <a href="javascript:;"></a>
+    <a href="javascript:;"></a>
+    <a href="javascript:;"></a>
+    <a href="javascript:;"></a>
+    <a href="javascript:;"></a>
+    <div class="abp"></div>
+</div>
+<div class="star">
+    <a href="javascript:;"></a>
+    <a href="javascript:;"></a>
+    <a href="javascript:;"></a>
+    <a href="javascript:;"></a>
+    <a href="javascript:;"></a>
+    <div class="abp"></div>
+</div>
+<div class="star">
+    <a href="javascript:;"></a>
+    <a href="javascript:;"></a>
+    <a href="javascript:;"></a>
+    <a href="javascript:;"></a>
+    <a href="javascript:;"></a>
+    <div class="abp"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<div>-->
+        <!--<div>-->
+            <!--<p>专业度评分：</p>-->
+            <!--<ul>-->
+                <!--<li></li>-->
+                <!--<li></li>-->
+                <!--<li></li>-->
+                <!--<li></li>-->
+                <!--<li></li>-->
+            <!--</ul>-->
+            <!--</div>-->
+        <!--<div>-->
+            <!--<p>服务态度评分：</p>-->
+            <!--<ul>-->
+                <!--<li></li>-->
+                <!--<li></li>-->
+                <!--<li></li>-->
+                <!--<li></li>-->
+                <!--<li></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+        <!--<div>-->
+            <!--<p>体检环境评分：</p>-->
+            <!--<ul>-->
+                <!--<li></li>-->
+                <!--<li></li>-->
+                <!--<li></li>-->
+                <!--<li></li>-->
+                <!--<li></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</div>-->
+</body>
+</html>
